@@ -28,25 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonHej = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // buttonHej
-            // 
-            this.buttonHej.Location = new System.Drawing.Point(114, 90);
-            this.buttonHej.Name = "buttonHej";
-            this.buttonHej.Size = new System.Drawing.Size(75, 42);
-            this.buttonHej.TabIndex = 0;
-            this.buttonHej.Text = "Hej";
-            this.buttonHej.UseVisualStyleBackColor = true;
-            this.buttonHej.Click += new System.EventHandler(this.buttonHej_Click);
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonHej);
             this.Name = "MainMenu";
             this.Text = "Main Menu";
             this.ResumeLayout(false);
@@ -54,8 +42,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonHej;
     }
 }
 
