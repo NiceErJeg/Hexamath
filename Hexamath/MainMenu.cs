@@ -16,5 +16,11 @@ namespace Hexamath
         {
             InitializeComponent();
         }
+
+        // Steen
+        private void buttonHej_Click(object sender, EventArgs e)
+        {
+            // Do something
+        }
     }
 }
