@@ -27,7 +27,7 @@ namespace Hexamath
         {
             MainPage mainPage = new MainPage();
 
-            Application.Run(mainPage)
+            Application.Run(mainPage);
         }
     }
 }
