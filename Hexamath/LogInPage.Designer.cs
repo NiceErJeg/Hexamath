@@ -87,6 +87,7 @@
             this.buttonChooseUser.TabIndex = 4;
             this.buttonChooseUser.Text = "Vælg bruger";
             this.buttonChooseUser.UseVisualStyleBackColor = true;
+            this.buttonChooseUser.Click += new System.EventHandler(this.buttonChooseUser_Click);
             // 
             // LogInPage
             // 

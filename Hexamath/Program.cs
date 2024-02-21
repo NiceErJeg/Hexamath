@@ -15,19 +15,7 @@ namespace Hexamath
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            LogInPage logInPage = new LogInPage();
-            logInPage.buttonChooseUser.Click += EnterMainPage;
-            Application.Run(logInPage);
-
-
-        }
-
-        static void EnterMainPage(object sender, EventArgs e)
-        {
-            MainPage mainPage = new MainPage();
-
-            Application.Run(mainPage)
+            Application.Run(new LogInPage());
         }
     }
 }

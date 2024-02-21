@@ -88,5 +88,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuestionLibrary\QuestionLibrary.csproj">
+      <Project>{1413DE46-FA31-4CFC-891D-AE32B5A2C100}</Project>
+      <Name>QuestionLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuestionLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +36,13 @@ namespace Hexamath
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonChooseUser_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainPage mainPage = new MainPage((User)comboBoxUsers.SelectedItem);
+            mainPage.ShowDialog();
         }
     }
 }
