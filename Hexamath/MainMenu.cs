@@ -16,5 +16,10 @@ namespace Hexamath
         {
             InitializeComponent();
         }
+
+        private void buttonCreateUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
