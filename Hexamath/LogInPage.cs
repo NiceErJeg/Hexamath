@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace Hexamath
 {
-    public partial class MainMenu : Form
+    public partial class LogInPage : Form
     {
-        public MainMenu()
+        public LogInPage()
         {
             InitializeComponent();
         }
 
         private void buttonCreateUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
         {
 
         }
