@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuestionLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Hexamath
 {
     public partial class MainPage : Form
     {
-        public MainPage()
+        User u;
+        public MainPage(User User)
         {
             InitializeComponent();
+            u = User;
         }
     }
 }
