@@ -33,6 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonChooseUser = new System.Windows.Forms.Button();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCreateUser
@@ -89,11 +91,30 @@
             this.buttonChooseUser.UseVisualStyleBackColor = true;
             this.buttonChooseUser.Click += new System.EventHandler(this.buttonChooseUser_Click);
             // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(510, 191);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(158, 26);
+            this.textBoxName.TabIndex = 5;
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Location = new System.Drawing.Point(546, 223);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 35);
+            this.buttonAdd.TabIndex = 6;
+            this.buttonAdd.Text = "Tilføj";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // LogInPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.buttonChooseUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -114,6 +135,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Button buttonChooseUser;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }
 

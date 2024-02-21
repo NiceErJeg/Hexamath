@@ -16,11 +16,15 @@ namespace Hexamath
         public LogInPage()
         {
             InitializeComponent();
+            textBoxName.Hide();
+            buttonAdd.Hide();
         }
 
         private void buttonCreateUser_Click(object sender, EventArgs e)
         {
-
+            buttonCreateUser.Hide();
+            textBoxName.Show();
+            buttonAdd.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -40,9 +44,24 @@ namespace Hexamath
 
         private void buttonChooseUser_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainPage mainPage = new MainPage((User)comboBoxUsers.SelectedItem);
-            mainPage.ShowDialog();
+            if (comboBoxUsers.SelectedIndex != -1)
+            {
+                this.Hide();
+                MainPage mainPage = new MainPage((User)comboBoxUsers.SelectedItem);
+                mainPage.ShowDialog();
+            }
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            if (textBoxName.Text != string.Empty)
+            {
+                this.Hide();
+                User user = new User();
+                user.Name = textBoxName.Text;
+                MainPage mainPage = new MainPage(user);
+                mainPage.ShowDialog();
+            }
         }
     }
 }
