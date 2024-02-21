@@ -64,6 +64,7 @@
             this.label1.Size = new System.Drawing.Size(214, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Vælg en eksisterende bruger";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -75,6 +76,7 @@
             this.label2.Size = new System.Drawing.Size(371, 82);
             this.label2.TabIndex = 3;
             this.label2.Text = "HexaMath";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // buttonChooseUser
             // 
@@ -98,6 +100,7 @@
             this.Controls.Add(this.buttonCreateUser);
             this.Name = "LogInPage";
             this.Text = "Login Menu";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
