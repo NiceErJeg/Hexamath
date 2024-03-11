@@ -15,8 +15,7 @@ namespace QuestionLibrary.QuestionTypes
 
         public override string GetString()
         {
-            string returnString = GenerateQuestion();
-            return returnString;
+            return GenerateQuestion();
         }
 
         internal string GenerateQuestion()
